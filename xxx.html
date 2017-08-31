@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    xxx
+    <script>
+        var request = new XMLHttpRequest()
+        request.open('GET','http://yy.com/test')
+        request.onload = function(){
+            console.log(request.responseText)
+        }
+        request.send()
+    </script>
+</body>
+</html>
